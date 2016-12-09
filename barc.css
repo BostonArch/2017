@@ -1,0 +1,42 @@
+/* Show/hide defaults: everything is hidden except the home section. */
+.content-section { display: none;  }
+#home            { display: block; }
+
+
+html,body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding-top: 50px;
+  background-color: unset;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+#main {
+  height: 100%;
+}
+
+.content-section {
+  min-height: 80%;
+  border-left: solid 5px red;
+  border-bottom: solid 5px red;
+  border-right: solid 5px red;
+  margin-bottom: 50px;
+}
+
+
+/* Navigation */
+.navbar {
+  min-height: 50px;
+  background: #ddd;
+  box-shadow: 0px 2px 3px grey;
+  border: 0px;
+}

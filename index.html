@@ -17,10 +17,18 @@
     <![endif]-->
 
     <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Questrial|PT+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|PT+Sans" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylecheet" type="text/css" href="barc.css">
+    <link rel="stylesheet" type="text/css" href="barc.css">
+
+    <!-- Show/Hide functionality -->
+    <script>
+      function show_only(id) {
+        $("div.content-section").hide();
+        $("div#"+id).show();
+      }
+    </script>
   </head>
 
   <body>
@@ -34,18 +42,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">BARC 2017</a>
+          <a class="navbar-brand" href="javascript:void(0)" onclick='show_only("home")'>BARC 2017</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
 
             <!-- <li><a href="#">Program</a></li> -->
-            <li><a href="#">Directions</a></li>
-            <li><a href="#">Registration</a></li>
-            <li><a href="#">Call for Abstracts</a></li>
-            <li><a href="#">Author Info</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Committees</a></li>
+            <!--<li><a href='javascript:void(0)' onclick='show_only("program")'>Program</a></li>-->
+            <li><a href='javascript:void(0)' onclick='show_only("registration")'>Registration</a></li>
+            <li><a href='javascript:void(0)' onclick='show_only("abstracts")'>Call for Abstracts</a></li>
+            <li><a href='javascript:void(0)' onclick='show_only("directions")'>Directions</a></li>
+            <li><a href='javascript:void(0)' onclick='show_only("contacts")'>Contacts</a></li>
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Previous BARCs<span class="caret"></span></a>
@@ -59,12 +66,113 @@
       </div>
     </nav>
 
-    <div class="container">
+    <!-- Content Sections -->
+    <div class="container" id="main">
+
+    <!-- Home -->
+    <div class="content-section container" id="home">
       <div class="jumbotron">
         <h1>BARC 2017</h1>
       </div>
     </div>
 
+    <!-- Registration -->
+    <div class="content-section container" id="registration">
+      <h2>Registration</h2>
+      <p>
+      Registration fees are as follows:
+      <ul>
+        <li>Industry participants: $50</li>
+        <li>Academic participants: $50</li>
+        <li>Students: FREE (Student registrations must be sponsored by a faculty member.)</li>
+      </ul>
+      Registration includes breakfast, light lunch, and coffee during all breaks.
+      </p>
+      <p>
+      Register <a href="#">HERE</a>.
+      </p>
+    </div>
+
+    <!-- Call for Abstracts -->
+      <div class="content-section container" id="abstracts">
+      <h2><br><strong>Invitation:</strong></h2>
+      <p class="plain">
+        <strong>Scope:</strong><br>
+        The goal of BARC is to provide a forum for computer architects in the Greater Boston area and beyond to get together and present/discuss the 'latest and greatest' in the area of computer architecture. Papers are being sought on many aspects of computer architecture, including (but not limited to):<br>
+        <li>Microarchitecture</li>
+        <li>Multicore/manycore processors</li>
+        <li>GPUs</li>
+        <li>Memory systems</li>
+        <li>I/O</li>
+        <li>Networking and communication</li>
+        <li>Low power</li>
+        <li>Adaptive and hybrid systems</li>
+        <li>Architectures based on emerging technologies</li>
+        <li>Accelerator-based architectures</li>
+        <li>Embedded processing</li>
+        <li>Performance evaluation techniques</li>
+      </p>
+
+
+      <h2><br/><strong>Important Dates:</strong></font></h2>
+      <p class="plain">
+        Abstract Submission Deadline: December 31, 2015<br/>
+        Author Notification: January 11, 2016<br/>
+      <strong>Workshop Date: Friday, January 29, 2016</strong><br/>
+      </p>
+
+      <h2><br/><strong>Submissions:</strong></font></h2>    
+      <p class="plain">
+        We invite abstracts, two pages or shorter, for consideration for presentation at BARC 2016.  We will also have a session of lightening talks - you should denote a lightening round talk in your title as â€œLightening Round: Tileâ€.  Authors may present work they have already published elsewhere, or plan to publish in the future.  We welcome participation from those outside of the Greater Boston area.
+        <br>
+        <br>
+        Please submit your abstract (in PDF format) using EasyChair:<a href="https://easychair.org/conferences/?conf=barc2016">https://easychair.org/conferences/?conf=barc2016.</a>
+        <br>
+        <br>
+        Abstracts will be accepted for a regular podium presentation or for a poster presentation. All accepted abstracts will be published in the workshop proceedings.
+        <br>
+        <br>
+        For questions, contact David Kaeli kaeli@ece.neu.edu or Yunsi Fei yfei@ece.neu.edu
+    </p>
+    </div>
+
+    <!-- Author Info -->
+    <div class="content-section container" id="author-info">
+    The final manuscripts of all accepted abstracts will be posted on the BARC 2016 website. Please use the following guidelines for preparing the final manuscript:
+      <ul>
+        <li>Manuscript should be two-pages long.</li>
+        <li>Text should use two column format.</li>
+        <li>One-inch margin should be left on all sides.</li>
+        <li>Using at least a 10-pt font is recommended.</li>
+        <li>Submissions should be in PDF format.</li>
+      </ul>
+      The technical program of BARC 2016 includes both oral presentations and poster presentations. Each oral presentation will be 20 minutes long (including Q&amp;A). Poster authors should print their posters and bring to the workshop. The size of the posters can be up to 8'x4'.
+    </div>
+
+    <!-- Directions -->
+    <div class="content-section container" id="directions">
+      <h2>Directions</h2>
+      <p>
+      BARC 2017 will be held on the ground floor of Maxwell-Dworkin at Harvard.
+      </p>
+
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.2991153605867!2d-71.11949158401724!3d42.3787740791857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37741136f99f3%3A0xdee244d8cde0c0dc!2sMaxwell-Dworkin%2C+33+Oxford+St%2C+Cambridge%2C+MA+02138!5e0!3m2!1sen!2sus!4v1481318015210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Contacts -->
+    <div class="content-section container" id="contacts">
+      <h3>Steering Committee</h3>
+      Fancy people
+      <h3>Organizing Committee</h3>
+      People who do work
+      <h3>Program Committee</h3>
+      People who read papers
+    </div>
+
+    </div> <!-- container -->
+    </div> <!-- content sections -->
 
     <!-- Bootstrap's javascript plugins -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
