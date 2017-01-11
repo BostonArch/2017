@@ -32,6 +32,11 @@ body {
   margin-bottom: 50px;
 }
 
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-color: black;
+}
 
 /* Navigation */
 .navbar {
@@ -61,7 +66,17 @@ body {
   font-weight: 300;
   font-size: 100px;
 }
-
 .banner h2 {
   font-size: 36px;
   font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .banner h1 {
+    font-size: 48px;
+  }
+  .banner h2 {
+    font-size: 24px;
+  }
+}
+
