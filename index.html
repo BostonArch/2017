@@ -48,11 +48,11 @@
           <ul class="nav navbar-nav">
 
             <!-- <li><a href="#">Program</a></li> -->
-            <!-- <li><a href='javascript:void(0)' onclick='show_only("program")'>Program</a></li> -->
+            <li><a href='javascript:void(0)' onclick='show_only("program")'>Program</a></li>
             <li><a href='javascript:void(0)' onclick='show_only("registration")'>Registration</a></li>
-            <li><a href='javascript:void(0)' onclick='show_only("abstracts")'>Call for Abstracts</a></li>
+            <!-- <li><a href='javascript:void(0)' onclick='show_only("abstracts")'>Call for Abstracts</a></li> -->
             <li><a href='javascript:void(0)' onclick='show_only("directions")'>Directions</a></li>
-            <!--<li><a href='javascript:void(0)' onclick='show_only("contacts")'>Contacts</a></li>-->
+            <!-- <li><a href='javascript:void(0)' onclick='show_only("contacts")'>Contacts</a></li> -->
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Previous BARCs<span class="caret"></span></a>
@@ -79,36 +79,67 @@
            Maxwell-Dworkin, 33 Oxford St., Cambridge, MA</p>
         <hr>
         <h3>Updates:</h3>
-        <p>Author notifications have been sent out, and <a href="https://barc2017.eventbrite.com">registration</a> is now available.</p>
+
+        <p>The <a href='javascript:void(0)' onclick='show_only("program")'>Program</a> is now available.</p>
+        <p>If you have not already registered, please do so as soon as possible: <a href="https://barc2017.eventbrite.com">registration</a></p>
       </div>
     </div>
 
     <!-- Program -->
     <div class="content-section container" id="program">
       <h3>Preliminary Schedule</h3>
-      <table class="table table-striped">
-        <tr><td>8:30&ndash;9:00</td>
-            <td>Welcome and light breakfast</td></tr>
-        <tr><td>9:00&ndash;9:50</td>
-            <td>Invited talk</td></tr>
-        <tr><td>9:50&ndash;10:50</td>
-            <td>Session 1: TBD</td></tr> <!-- 3 talks -->
-        <tr><td>10:50&ndash;11:10</td>
-            <td>Coffee break</td></tr>
-        <tr><td>11:10&ndash;12:30</td>
-            <td>Session 2: TBD</td></tr> <!-- 4 talk slots -->
-        <tr><td>12:30&ndash;1:30</td>
-            <td>Lunch</td></tr>
-        <tr><td>1:30&ndash;1:50</td>
-            <td>Lightning and Position Talks</td></tr> <!-- 2 talks -->
-        <tr><td>1:50&ndash;2:50</td>
-            <td>Session 3: TBD</td></tr> <!-- 3 talks -->
-        <tr><td>2:50&ndash;3:10</td>
-            <td>Coffee break</td></tr>
-        <tr><td>3:10&ndash;4:30</td>
-            <td>Session 4: TBD</td></tr> <!-- 4 talk slots -->
-        <tr><td>4:30</td>
-            <td>Closing Remarks</td></tr>
+      <table class="table table-striped program-table">
+        <tr><td><div class="program-time">8:30&ndash;9:00</div></td>
+            <td><div class="program-event">Welcome and light breakfast</div></td></tr>
+        <!-- Session 1 -->
+        <tr><td><div class="program-time">9:00&ndash;9:20</div></td>
+            <td><div class="program-author">Mark C. Jeffrey, Suvinay Subramanian, Maleen Abeydeera, Joel Emer and Daniel Sanchez</div><div class="program-title">Making Parallelism Pervasive with the Swarm Architecture</div></td></tr>
+        <tr><td><div class="program-time">9:20&ndash;9:40<div class="program-time"></td>
+            <td><div class="program-author">Yuhao Zhu</div><div class="program-title">The Watt-Wise Web</div></td></tr>
+        <tr><td><div class="program-time">9:40&ndash;10:00<div class="program-time"></td>
+            <td><div class="program-author">Kurt Keville</div><div class="program-title">RV128 and the Path to Embedded Exascale</div></td></tr>
+        <tr><td><div class="program-time">10:00&ndash;10:20<div class="program-time"></td>
+            <td><div class="program-author">Sae Kyu Lee, Tao Tong, Xuan Zhang, David Brooks and Gu-Yeon Wei</div><div class="program-title">Enabling Highly-Efficient Power Delivery for Chip Multiprocessors with Voltage Stacking</div></td></tr>
+        <!-- Break -->
+        <tr><td><div class="program-time">10:20&ndash;10:50<div class="program-time"></td>
+            <td><div class="program-event">Coffee break</div></td></tr>
+        <!-- Session 2 -->
+        <tr><td><div class="program-time">10:50&ndash;11:10</div></td>
+            <td><div class="program-author">Masab Ahmad and Omer Khan</div><div class="program-title">Situationally Adaptive Scheduling of Graph Algorithms on Single-Chip Parallel Machines</div></td></tr>
+        <tr><td><div class="program-time">11:10&ndash;11:30</div></td>
+            <td><div class="program-author">Parnian Mokri and Mark Hempstead</div><div class="program-title">ReconfASTs: Early-stage Identification of Reconfigurable Accelerators with Annotated Abstract Syntax Tree</div></td></tr>
+        <tr><td><div class="program-time">11:30&ndash;11:50<div class="program-time"></td>
+            <td><div class="program-author">Michel Kinsy, Rashmi Agrawal and Hien Nguyen</div><div class="program-title">Fast Processing of Large Graph Applications Using Asynchronous Architecture</div></td></tr>
+        <!-- Lunch -->
+        <tr><td><div class="program-time">11:50&ndash;1:00<div class="program-time"></td>
+            <td><div class="program-event">Lunch</div></td></tr>
+        <!-- Session 3 -->
+        <tr><td><div class="program-time">1:00&ndash;1:20<div class="program-time"></td>
+            <td><div class="program-author">Robert Adolf, Brandon Reagen, Gu-Yeon Wei, and David Brooks</div><div class="program-title">How Not to Write a Deep Learning Benchmark</div></td></tr>
+        <tr><td><div class="program-time">1:20&ndash;1:40<div class="program-time"></td>
+            <td><div class="program-author">Leila Delshadtehrani, Jonathan Appavoo, Manual Egele, Ajay Joshi and Schuyler Eldridge</div><div class="program-title">Varanus: An Infrastructure for Programmable Hardware Monitoring Units</div></td></tr>
+        <tr><td><div class="program-time">1:40&ndash;2:00<div class="program-time"></td>
+            <td><div class="program-author">Louie Lio, Zhen Hang Jiang, Yunsi Fei, and David Kaeli</div><div class="program-title">Side-channel Analysis on the ARM Cortex A9 Microprocessor</div></td></tr>
+        <tr><td><div class="program-time">2:00&ndash;2:20<div class="program-time"></td>
+            <td><div class="program-author">Steven Hoover</div><div class="program-title">Combating the Complexity Crisis with "Timing Abstraction"</td></tr>
+        <!-- Break -->
+        <tr><td><div class="program-time">2:20&ndash;2:50<div class="program-time"></td>
+            <td><div class="program-event">Coffee break</div></td></tr>
+        <!-- Session 4 -->
+        <tr><td><div class="program-time">2:50&ndash;3:10<div class="program-time"></td>
+            <td><div class="program-author">Hokchhay Tann, Soheil Hashemi, Iris Bahar and Sherief Reda</div><div class="program-title">Hardware-Software Co-design Techniques for Deep Neural Networks</div></td></tr>
+        <tr><td><div class="program-time">3:10&ndash;3:30<div class="program-time"></td>
+            <td><div class="program-author">Zafar Takhirov, Joseph Wang, Venkatesh Saligrama and Ajay Joshi</div><div class="program-title">Energy-Efficient Classification: Adaptive Approach</div></td></tr>
+        <tr><td><div class="program-time">3:30&ndash;3:50<div class="program-time"></td>
+            <td><div class="program-author">Patrick Reilly, Leiming Yu and David Kaeli</div><div class="program-title">Accelerating Machine Learning Algorithms in Python</div></td></tr>
+        <tr><td><div class="program-time">3:50&ndash;4:10<div class="program-time"></td>
+            <td><div class="program-author">Qingchuan Shi, Hamza Omar and Omer Khan</div><div class="program-title">Towards Resilient yet Efficient Parallel Execution of Convolutional Neural Networks</div></td></tr>
+        <!-- Break -->
+        <tr><td><div class="program-time">4:10&ndash;4:20<div class="program-time"></td>
+            <td><div class="program-event">Break</div></td></tr>
+        <!-- Panel -->
+        <tr><td><div class="program-time">4:20&ndash;5:00<div class="program-time"></td>
+            <td><div class="program-event">Invited Panel</div></td></tr>
       </table>
     </div>
 
